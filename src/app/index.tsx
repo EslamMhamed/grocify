@@ -1,3 +1,4 @@
+import { Image } from "expo-image";
 import { Link } from "expo-router";
 import { Text, View, StyleSheet } from "react-native";
 
@@ -5,8 +6,9 @@ export default function Index() {
   return (
     <View style={styles.container}>
       <Text>Edit src/app/index.tsx to edit this screen.</Text>
-      <Link href={"/about/index"}>About screen link</Link>
-      <Link href={"/contact"}>Contact screen link</Link>
+      <Image 
+      source={require("../../assets/images/icon.png")} 
+      style={{width:200, height:200, borderRadius:20}} />
     </View>
   );
 }
